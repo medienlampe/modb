@@ -1,0 +1,30 @@
+{
+  "name": "modb-server",
+  "version": "0.0.1",
+  "description": "Backend server for ModelDB",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medienlampe/modb.git"
+  },
+  "keywords": [
+    "model",
+    "photography",
+    "database",
+    "modb",
+    "modeldb"
+  ],
+  "author": "Sven Bischoff, @thetalesofimmo",
+  "license": "All rights reserved.",
+  "bugs": {
+    "url": "https://github.com/medienlampe/modb/issues"
+  },
+  "homepage": "https://github.com/medienlampe/modb#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "lowdb": "^1.0.0"
+  }
+}

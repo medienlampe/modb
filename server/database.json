@@ -1,0 +1,84 @@
+{
+  "title": "ModelDB Database",
+  "version": "1.0",
+  "models": [
+    {
+      "name": "Maria",
+      "surname": "Mustermann",
+      "address": {
+        "street": "Musterstraße",
+        "number": "12",
+        "city": "Musterstadt",
+        "postalcode": "12345",
+        "country": "Germany"
+      },
+      "birthdate": "1980-12-24",
+      "contractdate": "2010-12-12",
+      "contract": "",
+      "tags": ["tag1", "tag2", "tag3"]
+    },
+    {
+      "name": "Martin",
+      "surname": "Mustermann",
+      "address": {
+        "street": "Musterstraße",
+        "number": "2",
+        "city": "Musterstadt",
+        "postalcode": "54321",
+        "country": "Germany"
+      },
+      "birthdate": "1990-12-24",
+      "contractdate": "2012-12-12",
+      "contract": "",
+      "tags": ["tag2", "tag3", "tag4"]
+    }
+  ],
+  "ideas": [
+    {
+      "title": "First idea",
+      "description":
+        "Tempor ut tempor nulla officia pariatur commodo eiusmod ut magna ut adipisicing ad aute pariatur nisi sed labore elit nisi duis sit tempor nulla esse.",
+      "creationdate": "2016-07-21",
+      "enddate": "",
+      "tags": ["tag4", "tag5", "tag6"]
+    },
+    {
+      "title": "Second idea",
+      "description":
+        "Cillum cupidatat voluptate aliqua non ut magna commodo sed elit mollit fugiat excepteur eu nisi.",
+      "creationdate": "2018-07-12",
+      "enddate": "",
+      "tags": ["tag4", "tag5", "tag6"]
+    }
+  ],
+  "contracts": [
+    {
+      "key": 1,
+      "type": 1,
+      "file": "MustermannMariaTFP.pdf"
+    },
+    {
+      "key": 2,
+      "type": 2,
+      "file": "MustermannMariaContract.pdf"
+    }
+  ],
+  "contracttypes": [
+    {
+      "key": 1,
+      "title": "Sample TFP",
+      "description":
+        "Est labore dolore occaecat culpa esse ex eiusmod exercitation.",
+      "blueprint": "SampleTFP.pdf",
+      "tags": ["tag3", "tag4", "tag1"]
+    },
+    {
+      "key": 2,
+      "title": "Sample Contract",
+      "description":
+        "Lorem ipsum enim elit in laborum ullamco deserunt enim enim sint nisi do ut.",
+      "blueprint": "SampleContract.pdf",
+      "tags": ["tag3", "tag5", "tag1"]
+    }
+  ]
+}
