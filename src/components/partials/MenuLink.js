@@ -1,7 +1,7 @@
 import React from 'react';
 
 function isActive(props) {
-  if (props && props.active && props.route && props.route == props.active) {
+  if (props && props.active && props.route && props.route === props.active) {
     return 'active';
   }
 }

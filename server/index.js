@@ -6,6 +6,15 @@ const db = low(adapter);
 
 var restapi = express();
 
+restapi.use(function(req, res, next) {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header(
+    'Access-Control-Allow-Headers',
+    'Origin, X-Requested-With, Content-Type, Accept'
+  );
+  next();
+});
+
 restapi.get('/', function(req, res) {
   console.log('Serving testdata...');
   res.json({ foo: 'var' });
