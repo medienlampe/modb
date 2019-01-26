@@ -2,9 +2,9 @@
   "name": "modb-server",
   "version": "0.0.1",
   "description": "Backend server for ModelDB",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "serve": "node index.js"
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/medienlampe/modb#readme",
   "dependencies": {
-    "express": "^4.16.3",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
     "lowdb": "^1.0.0"
   }
 }

@@ -1,8 +1,8 @@
-import React, { Component, Fragment as F } from 'react';
-import Menu from '../partials/Menu';
-import Content from '../partials/Content';
-import ModelList from '../partials/ModelList';
-import axios from 'axios';
+import React, { Component, Fragment as F } from "react";
+import Menu from "../partials/Menu";
+import Content from "../partials/Content";
+import ModelList from "../partials/ModelList";
+import axios from "axios";
 
 export class Models extends Component {
   state = {
@@ -11,7 +11,7 @@ export class Models extends Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:8000/models')
+      .get("http://localhost:8000/models")
       .then(response => {
         // create an array of contacts only with relevant data
         const newModels = response.data.map(model => {
@@ -40,7 +40,7 @@ export class Models extends Component {
   }
 
   render() {
-    const title = 'ModelDB: Modelle';
+    const title = "ModelDB: Modelle";
 
     return (
       <F>

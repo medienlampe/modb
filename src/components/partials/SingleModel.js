@@ -1,4 +1,4 @@
-import React, { Fragment as F } from 'react';
+import React, { Fragment as F } from "react";
 
 const SingleModel = props => (
   <F>
@@ -22,11 +22,13 @@ const SingleModel = props => (
       {props.model.address.country}
     </p>
     <h3>Tags</h3>
-    <ul>
-      {props.model.tags.map(function(tag) {
-        return <li>{tag}</li>;
-      })}
-    </ul>
+    {props.model.tags.map((tag, index) => {
+      return (
+        <a key={index} href="/model/byTag/{tag}">
+          {tag}
+        </a>
+      );
+    })}
   </F>
 );
 
