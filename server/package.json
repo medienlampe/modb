@@ -1,31 +1,37 @@
 {
   "name": "modb-server",
-  "version": "0.0.1",
-  "description": "Backend server for ModelDB",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js"
-  },
+  "description": "",
+  "version": "1.0.0",
+  "author": "Sven Bischoff, @thetalesofimmo",
+  "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/medienlampe/modb.git"
+    "url": "git://github.com/medienlampe/modb.git"
   },
-  "keywords": [
-    "model",
-    "photography",
-    "database",
-    "modb",
-    "modeldb"
-  ],
-  "author": "Sven Bischoff, @thetalesofimmo",
-  "license": "All rights reserved.",
-  "bugs": {
-    "url": "https://github.com/medienlampe/modb/issues"
-  },
-  "homepage": "https://github.com/medienlampe/modb#readme",
+  "bugs": "http://github.com/medienlampe/modb/issues",
   "dependencies": {
-    "express": "^4.16.4",
-    "jsonwebtoken": "^8.4.0",
-    "lowdb": "^1.0.0"
-  }
+    "express": "^4.0.0",
+    "body-parser": "^1.15.0",
+    "swaggerize-express": "^4.0.0",
+    "swagmock": "~0.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^2",
+    "tape": "^4",
+    "istanbul": "~0.4.3",
+    "is-my-json-valid": "^2.13.1",
+    "js-yaml": "^3.2.6",
+    "supertest": "^1.2.0",
+    "swagger-parser": "^3.4.1"
+  },
+  "scripts": {
+    "test": "tape 'tests/**/*.js'",
+    "cover": "istanbul cover tape -- 'tests/**/*.js'",
+    "lint": "eslint .",
+    "regenerate": "yo swaggerize:test --framework express --apiPath './config/swagger.json'"
+  },
+  "generator-swaggerize": {
+    "version": "4.1.0"
+  },
+  "main": "./server"
 }
